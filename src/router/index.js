@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginView from "../views/LoginView.vue"
-import ListeEmlpoyer from "../views/ListeEmlpoyer.vue"
+import ListeEmployer from "../views/ListeEmployer.vue"
+import didier from "../views/didier.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,10 +12,15 @@ const router = createRouter({
       component: LoginView
     },
   {
-    path: '/ListeEmlpoyer',
-    name: 'ListeEmlpoyer',
-    component: ListeEmlpoyer
-  }
+    path: '/ListeEmployer',
+    name: 'ListeEmployer',
+    component: ListeEmployer
+  },
+{
+  path: '/didier',
+  name: 'didier',
+  component: didier
+},
   ]
 })
 

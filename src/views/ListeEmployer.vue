@@ -1,6 +1,6 @@
 
 <template>
-   <div> les hommes</div>
+   <p>les hommes</p>
 </template>
 <script >
 
