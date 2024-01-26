@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginView from "../views/LoginView.vue"
-import ListeEmployer from "../views/ListeEmployer.vue"
-import didier from "../views/didier.vue"
+import Authentification from "../views/Authentification.vue"
+import ListeUtilisateur from "../views/ListeUtilisateur.vue"
+import AjouterConge from "../views/AjouterConge.vue"
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,14 +15,19 @@ const router = createRouter({
       component: LoginView
     },
   {
-    path: '/ListeEmployer',
-    name: 'ListeEmployer',
-    component: ListeEmployer
+    path: 'Authentification',
+    name: 'Authentification',
+    component: Authentification
+  },
+  {
+    path: 'ListeUtilisateur',
+    name: 'ListeUtilisateur',
+    component: ListeUtilisateur
   },
 {
-  path: '/didier',
-  name: 'didier',
-  component: didier
+  path: 'AjouterConge',
+  name: 'AjouterConge',
+  component: AjouterConge
 },
   ]
 })
